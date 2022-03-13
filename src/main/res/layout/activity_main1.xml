@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4061F30">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="410dp"
+        android:layout_height="356dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Data [rrrr/mm/dd]"
+            android:inputType="date"
+
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#6AFFFFFF"
+            android:textColorHint="#6AFFFFFF" />
+
+        <EditText
+            android:id="@+id/editTextPomiar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Pomiar [mg/dl]"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#6AFFFFFF"
+            android:textColorHint="#6AFFFFFF" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonPrzedPosiłkiem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Przed Posiłkiem"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/radioButtonPoPosiłku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Po Posiłku"
+                android:textColor="#FFFFFF" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editTextNumberWaga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Waga [kg]"
+            android:inputType="numberDecimal"
+            android:text="55"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#6AFFFFFF" />
+
+        <Button
+            android:id="@+id/buttonDodajPom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dodaj" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
